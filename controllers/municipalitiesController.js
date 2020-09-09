@@ -25,10 +25,12 @@ exports.properties = async (req, res) => {
       data[i].features.MPIO_CCDGO = undefined;
       data[i].features.MPIO_CCNCT = undefined;
       data[i].features.MPIO_CNMBR = undefined;
-      data[i].features.OBJECTID = undefined;
+      // data[i].features.OBJECTID = undefined;
       data[i].features.TOTAL_UNIDADES_PERSONAS_PROY_2020 = undefined;
       data[i].features.TOTAL_UNIDADES_Personas_en_gene = undefined;
     }
+
+    console.log(data);
 
     res.status(200).json({
       status: "success",
