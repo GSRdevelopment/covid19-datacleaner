@@ -13,23 +13,6 @@ exports.properties = async (req, res) => {
       delete data[i].type;
     }
 
-    // for (let i = 0; i < data.length; i++) {
-    //   data[i].features.A_CASA = undefined;
-    //   data[i].features.A_HOSPITAL = undefined;
-    //   data[i].features.A_HOSPITAL_UCI = undefined;
-    //   data[i].features.Area_Km2 = undefined;
-    //   data[i].features.DPTO_CCDGO = undefined;
-    //   data[i].features.ETAREO_F = undefined;
-    //   data[i].features.ETAREO_M = undefined;
-    //   data[i].features.GlobalID = undefined;
-    //   data[i].features.MPIO_CCDGO = undefined;
-    //   data[i].features.MPIO_CCNCT = undefined;
-    //   data[i].features.MPIO_CNMBR = undefined;
-    //   data[i].features.OBJECTID = undefined;
-    //   data[i].features.TOTAL_UNIDADES_PERSONAS_PROY_2020 = undefined;
-    //   data[i].features.TOTAL_UNIDADES_Personas_en_gene = undefined;
-    // }
-
     console.log(data);
 
     res.status(200).json({
