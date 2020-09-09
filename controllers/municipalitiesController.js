@@ -13,8 +13,6 @@ exports.properties = async (req, res) => {
       delete data[i].type;
     }
 
-    console.log(data);
-
     res.status(200).json({
       status: "success",
       data,
