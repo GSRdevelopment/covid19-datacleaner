@@ -23,5 +23,3 @@ exports.geometry = async () => {
     });
   }
 };
-
-dataUpload();
