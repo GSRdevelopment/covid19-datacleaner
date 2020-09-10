@@ -10,7 +10,6 @@ exports.properties = async (req, res) => {
 
     for (let i = 0; i < data.length; i++) {
       data[i].geometry = undefined;
-      data[i].type = undefined;
     }
 
     res.status(200).json({
