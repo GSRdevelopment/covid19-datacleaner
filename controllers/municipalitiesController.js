@@ -9,8 +9,8 @@ exports.properties = async (req, res) => {
     let data = request.data.features;
 
     for (let i = 0; i < data.length; i++) {
-      delete data[i].geometry;
-      delete data[i].type;
+      data[i].geometry = undefined;
+      data[i].type = undefined;
     }
 
     res.status(200).json({
