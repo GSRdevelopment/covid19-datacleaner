@@ -4,6 +4,6 @@ const municipalitiesController = require("../controllers/municipalitiesControlle
 const router = express.Router();
 
 router.route("/properties").get(municipalitiesController.properties);
-router.route("/geometry").get(municipalitiesController.geometry);
+router.route("/geometry").get(municipalitiesGeometryController.geometry);
 
 module.exports = router;
