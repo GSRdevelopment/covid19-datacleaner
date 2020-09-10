@@ -1,4 +1,4 @@
-const axios = request("axios");
+const axios = require("axios");
 
 exports.geometry = async () => {
   try {
